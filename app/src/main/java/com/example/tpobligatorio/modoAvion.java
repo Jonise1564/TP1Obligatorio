@@ -15,12 +15,12 @@ public class modoAvion extends BroadcastReceiver {
         if(avion){
             Toast.makeText(context, "El modo de avion se activo", Toast.LENGTH_LONG).show();
             Intent llamada = new Intent(Intent.ACTION_DIAL);
-            llamada.setData(Uri.parse("Tel: 2664553747"));
+            llamada.setData(Uri.parse("tel:2664553747"));
             llamada.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(llamada);
 
         }else{
-            Toast.makeText(context, "El modo de avion se ha desactivado", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "El modo de avion se  desactivo", Toast.LENGTH_LONG).show();
         }
 
     }

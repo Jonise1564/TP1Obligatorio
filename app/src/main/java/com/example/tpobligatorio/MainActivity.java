@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        registerReceiver(eventoAvion, new IntentFilter("android.intent.action.AIRPLANE_MODE"));
+        registerReceiver(eventoAvion, new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED));
     }
 
 
