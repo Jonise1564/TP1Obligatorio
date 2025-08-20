@@ -1,4 +1,5 @@
 package com.example.tpobligatorio;
+import android.content.Intent;
 
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -26,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(eventoAvion, new IntentFilter("android.intent.action.AIRPLANE_MODE"));
     }
 
-    private void registerReceiver(modoAvion eventoAvion, IntentFilter filter) {
-    }
+
 
     @Override
     protected void onStop() {
